@@ -1,112 +1,112 @@
-!DOCTYPE html
-html lang=en
-head
-titlePage Titletitle
-meta charset=UTF-8
-meta name=viewport content=width=device-width, initial-scale=1
-!--W3.CSS should take care of all our styling needs and all device and browser differences
-link rel=stylesheet href=httpswww.w3schools.comw3css3w3.css
---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--W3.CSS should take care of all our styling needs and all device and browser differences:
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+-->
 
-style
+<style>
 body {
-  font-family Arial, Helvetica, sans-serif;
-  margin 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
- Style the header 
+/* Style the header */
 .header {
-  padding 80px;
-  text-align center;
-  background #1abc9c;
-  color white;
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
 }
 
- Increase the font size of the h1 element 
+/* Increase the font size of the h1 element */
 .header h1 {
-  font-size 40px;
+  font-size: 40px;
 }
 
- Style the top navigation bar 
+/* Style the top navigation bar */
 .navbar {
-  overflow hidden;
-  background-color #333;
+  overflow: hidden;
+  background-color: #333;
 }
 
- Style the navigation bar links 
+/* Style the navigation bar links */
 .navbar a {
-  float left;  Make sure that the links stay side-by-side 
-  display block;   Change the display to block, for responsive reasons 
-  color white;
-  text-align center;
-  padding 14px 20px;
-  text-decoration none;  Remove underline 
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block;  /* Change the display to block, for responsive reasons */
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none; /* Remove underline */
 }
 
- Right-aligned link 
+/* Right-aligned link */
 .navbar a.right {
-  float right;
+  float: right;
 }
 
- Change color on hovermouse-over 
-.navbar ahover {
-  background-color #ddd;   Grey background color 
-  color black;   Black text color 
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd;  /* Grey background color */
+  color: black;  /* Black text color */
 }
 
 .footer {
-  padding 20px;  Some padding 
-  text-align center;  Center text
-  background #ddd;  Grey background 
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #ddd; /* Grey background */
 }
 
 
-style
+</style>
 
-head
-body
+</head>
+<body>
 
-div class=navbar
-  a href=httpswww.google.com class='left'Homea
-  a href=#Portfolioa
-  a href=#Lecturesa
-  a href=#About Usa
-  a href=# class=rightContacta
-div
+<div class="navbar">
+  <a href="https://www.google.com" class='left'>Home</a>
+  <a href="#">Portfolio</a>
+  <a href="#">Lectures</a>
+  <a href="#">About Us</a>
+  <a href="#" class="right">Contact</a>
+</div>
 
-div class=header
-  h1RK's Academyh1
-  pBook Your Career!p
-div
+<div class="header">
+  <h1>RK's Academy</h1>
+  <p>Book Your Career!</p>
+</div>
 
-!-- Slide Show --
-section
-  img class=mySlides src=img_band_la.jpg style=width100%
-  img class=mySlides src=img_band_ny.jpg style=width100%
-  img class=mySlides src=img_band_chicago.jpg style=width100%
-section
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="img_band_la.jpg" style="width:100%">
+  <img class="mySlides" src="img_band_ny.jpg" style="width:100%">
+  <img class="mySlides" src="img_band_chicago.jpg" style="width:100%">
+</section>
 
-div class=footer
-  h2Footerh2
-div
+<div class="footer">
+  <h2>Footer</h2>
+</div>
 
-script
- Automatic Slideshow - change image every 3 seconds
+<script>
+// Automatic Slideshow - change image every 3 seconds
 var myIndex = 0;
 carousel();
 
 function carousel() {
   var i;
-  var x = document.getElementsByClassName(mySlides);
-  for (i = 0; i  x.length; i++) {
-    x[i].style.display = none;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
   }
   myIndex++;
-  if (myIndex  x.length) {myIndex = 1}
-  x[myIndex-1].style.display = block;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
   setTimeout(carousel, 3000);
 }
-script
+</script>
 
-body
-html
+</body>
+</html>
